@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {scroll-behavior: smooth; font-family: sans-serif;}
+
+@font-face {
+    font-family : Calibre;
+    src: local('Calibre-Bold'),
+        url('../font/Calibre-Bold.woff'),
+        url('../font/Calibre-Bold.ttf');
+}
+
+#wrapper {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+
+.header a {
+    text-decoration: none
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo h1 {font-family: Calibre; font-weight:700; font-size: 35px; color: black}
+
+.menu {
+    display: none;
+}
+
+.sidepanel {
+    height: 100%;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: white;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+
+}
+
+.sidepanel .sidecontact {
+    float: left;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.sidepanel .sidecontact a {
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.sidepanel .sidecontact a:hover {
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.1s;
+    background-color: black;
+    color: white;
+}
+
+
+.sidepanel .sidemenu {
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+/* The sidepanel links */
+.sidepanel .sidemenu a {
+    text-decoration: none;
+    color: #DBDBDB;
+    display: block;
+    transition: 0.3s;
+    font-family: Calibre; font-weight:700; font-size: 55px;
+    cursor: pointer;
+    pointer-events: all;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidepanel .sidemenu a:hover {
+    color: black;
+}
+
+
+.sidepanel .siderights {
+    display: block;
+    z-index: 99999999;
+    position: absolute;
+    right: 30px;
+    bottom: 6%;
+
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 25px;
+    color: black;
+}
+
+.openbtn {
+    display: inline-block;
+    position: absolute;
+    right: 3.5%;
+    margin-top: 8px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    z-index: 1;
+    font-family: Calibre; font-weight:700; font-size: 25px; color: black;
+    background-color: transparent;
+    
+}
+
+.openbtn:hover {
+    transition: 0.5s;
+}
+
+#homeslide {padding-top: 50px; text-align: center; }
+
+.slide {
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide ul {
+    width: calc(100% * 4);
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.slide li {
+    width: calc(100% / 4);
+    height: 100%;
+}
+
+.simgcon-wrap {width: 95%; margin: auto;}
+
+.simgcon {position: relative; padding-top: 66.66%; overflow: hidden;}
+
+
+.simgcon .centered {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    -webkit-transform: translate(50%,50%); 
+    -ms-transform: translate(50%,50%); 
+    transform: translate(50%,50%);    
+}
+
+
+.simgcon .centered img{
+    -webkit-transform: translate(-50%,-50%); 
+    -ms-transform: translate(-50%,-50%); 
+    transform: translate(-50%,-50%);
+}
+
+
+.simgcon .portrait img  { 
+    width: 100%; 
+    max-width: none; 
+    height: auto;
+}
+
+.simgcon .landscape img  { 
+    height: 100%; 
+    width: auto; 
+    max-width: none;
+    
+}
+
+.slidetitle {width: 100%; font-size: 16px; padding-top: 10px;}
+
+.slide li:nth-child(1) {
+    background: white;
+}
+
+.slide li:nth-child(2) {
+    background: white;
+}
+
+.slide li:nth-child(3) {
+    background: white;
+}
+
+.slide li:nth-child(4) {
+    background: white;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+
+#works {
+    margin-top: 35px;
+    text-align: center;
+    display: block;
+}
+
+#works a {text-decoration: none;}
+
+
+
+.imgcon-wrap {display: inline-block;
+  width: 43%; padding: 0 3px; text-align: left;}
+
+.imgcon-wrap p {color: black; margin-top : 7px; margin-bottom: 20px; font-size: 11px;}
+
+.imgcon {
+    position: relative;
+  padding-top: 66.66%;
+  overflow: hidden;
+}
+
+.imgcon .centered {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    -webkit-transform: translate(50%,50%); 
+    -ms-transform: translate(50%,50%); 
+    transform: translate(50%,50%);    
+}
+
+.imgcon .centered img{
+    -webkit-transform: translate(-50%,-50%); 
+    -ms-transform: translate(-50%,-50%); 
+    transform: translate(-50%,-50%);
+}
+
+
+.imgcon .portrait img  { 
+    width: 100%; 
+    max-width: none; 
+    height: auto;
+}
+
+.imgcon .portrait img:hover {
+    width: 110%;
+    transition: 0.3s;
+}
+
+
+.imgcon .landscape img  { 
+    height: 100%; 
+    width: auto; 
+    max-width: none;
+}
+
+.imgcon .landscape img:hover {
+    height: 110%;
+    transition: 0.3s;
+}
+
+.footer {display: none;}
+
+#detail {
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+
+.detitle {
+    width: 93%;
+    max-width: 1600px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.category {
+    display: inline-block;
+    vertical-align: top;
+    width: 20.5%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.year {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    text-align: right;
+    width: 20.5%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.explain {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 23px;
+    margin-top: 25px;
+}
+
+.explain h3 {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    margin-bottom: -35px;
+    
+}
+
+.wimg {
+    width: 93%;
+    max-width: 1600px;
+    margin:auto;
+}
+
+.wimg img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.wimg video {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutcon {
+    width: 100%;
+    margin: auto;
+    text-align: center
+}
+
+.about1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    padding: 0 3px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-family: calibre;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.about1_ {
+    display: none;
+    vertical-align: top;
+    width: 46%;
+    padding: 0 3px;
+    padding-bottom: 50px;
+}
+
+
+.about2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    padding: 0 3px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.about2_ {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    padding: 0 3px;
+    padding-bottom: 60px;
+}
+
+.about2__ {
+    display: none;
+    vertical-align: top;
+    width: 46%;
+    padding: 0 3px;
+    padding-bottom: 60px;
+}
+
+.about2 h3 {
+    font-weight: bold;
+    font-family: calibre;
+    font-size: 24px;
+    color: black;
+    margin-bottom: -30px;
+}
+
+.about3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    padding: 0 3px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+}
+
+
+.about3 h3 {
+    font-weight: bold;
+    font-family: calibre;
+    font-size: 24px;
+    color: black;
+    margin-bottom: -30px;   
+}

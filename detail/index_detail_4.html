@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>20000</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" media="(min-width: 1025px)" href="../css/style_web.css">
+    <link rel="stylesheet" media="(min-width: 415px) and (max-width: 1024px)" href="../css/style_pad.css">
+    <link rel="stylesheet" media="(min-width: 0px) and (max-width: 414px)" href="../css/style_phone.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div class="header">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="sidecontact"><a href="tel:+821077414991">Phone : (+82) 10 7741 4991</a><br>
+                    <a href="mailto:grum1008@me.com">e-Mail : grum1008@me.com</a></div>
+                <div class="sidemenu" onclick="closeNav()">
+                    <a href="../index.html">20000</a>
+                    <a href="../index.html">works</a>
+                    <a href="../index.html">about</a>
+                    <a href="https://www.instagram.com/20_000.jun">insta</a>
+                </div>
+                <div class="siderights">
+                    © 20000 2019
+                </div>
+            </div>
+            <div class="logo"><a href="../index.html" class="sm-link sm-link_padding-bottom sm-link4 sm-link__label">
+                    <h1>20000</h1>
+                </a></div>
+
+            <button class="openbtn" onclick="openNav()">menu</button>
+
+
+            <div class="menu">
+                <ul>
+
+                    <li><a href="../index.html" class="sm-link sm-link_padding-bottom sm-link4 sm-link__label">
+                            works
+                        </a></li>
+                    <li><a href="../index.html" class="sm-link sm-link_padding-bottom sm-link4 sm-link__label">
+                            about
+                        </a></li>
+                    <li><a href="https://www.instagram.com/20_000.jun" class="sm-link sm-link_padding-bottom sm-link4 sm-link__label">
+                            insta
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section></section>
+
+
+        <div id="detail">
+           <div class="detitle">
+               <div class="category">
+                   Editorial <br>
+                   Graphic
+               </div>
+               <div class="year">
+                   2019
+               </div>
+               <div class="explain">
+                <h3>Reading Book Fest Brochure</h3> <br><br>
+                   It's a brochure that promote and define 'Reading Book Fest'. A total of three brochures are composed of posters, standardizing regulations, and examples of use. A3 two-sided format when unfolded and A5 size format when folded. It includes promotion posters, event descriptions, logo usage regulations and graphic motifs, logo utilisation and woodworking images.
+               </div>
+           </div>
+           <div class="wimg">
+             <img src="../Source/RBF_brochure.jpg" alt="">
+              <img src="../Source/bookfestposter.jpg" alt="">
+               
+           </div>
+            
+        </div>
+
+
+        <section></section>
+
+
+        <div class="footer">
+            <div class="contact">
+                <a href="tel:+821077414991">(+82) 10 7741 4991</a><br>
+                <a href="mailto:grum1008@me.com">grum1008@me.com</a>
+            </div>
+            <div class="rights">
+                <p>© 20000 2019</p>
+            </div>
+        </div>
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "100%";
+            }
+
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+
+        </script>
+
+        <script>
+            document.addEventListener("scroll", scrollME);
+
+            function scrollME() {
+
+                var height = document.documentElement.offsetHeight,
+                    mx = (document.documentElement.scrollHeight - document.documentElement.clientHeight),
+                    perc_v = 20000 + ((document.documentElement.scrollTop) / (mx)) * -20000;
+
+                document.getElementsByTagName('h1')[0].innerText = Math.round(perc_v) + " "
+
+
+            }
+
+        </script>
+        </div>
+
+
+</body>
+
+</html>
